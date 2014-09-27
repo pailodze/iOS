@@ -7,21 +7,49 @@
 //
 
 #import "ViewController.h"
+#import "SUPanel.h" // importing header file of our class
 
-@interface ViewController ()
+@interface ViewController () {
+    
+    SUPanel *panel; // declaring the object of our class SUPanel
+    
+}
 
 @end
 
 @implementation ViewController
-            
+
+
+- (IBAction)buttonClicked:(id)sender {
+    
+    [panel slideUp];
+}
+
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    panel = [[SUPanel alloc] initWithHeight:300]; // initializing the panel
+    
+    
+    [self.view insertSubview:panel aboveSubview:[self.view.subviews lastObject]]; // adding the panel to view.
+   
+    UILabel *theLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 50, 100, 20)];
+    theLabel.text = @"Hello World!";
+    theLabel.textColor = [UIColor blackColor];
+    
+    [panel addSubview:theLabel];
+    
+  
+    
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 @end

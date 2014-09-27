@@ -13,6 +13,7 @@
 		257ADA2D19D6C110009174D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257ADA2B19D6C110009174D8 /* Main.storyboard */; };
 		257ADA2F19D6C110009174D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257ADA2E19D6C110009174D8 /* Images.xcassets */; };
 		257ADA3B19D6C110009174D8 /* SlideUPPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 257ADA3A19D6C110009174D8 /* SlideUPPanelTests.m */; };
+		257ADA4619D6C142009174D8 /* SUPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 257ADA4519D6C142009174D8 /* SUPanel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		257ADA3419D6C110009174D8 /* SlideUPPanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideUPPanelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		257ADA3919D6C110009174D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		257ADA3A19D6C110009174D8 /* SlideUPPanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideUPPanelTests.m; sourceTree = "<group>"; };
+		257ADA4419D6C142009174D8 /* SUPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPanel.h; sourceTree = "<group>"; };
+		257ADA4519D6C142009174D8 /* SUPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPanel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		257ADA2019D6C110009174D8 /* SlideUPPanel */ = {
 			isa = PBXGroup;
 			children = (
+				257ADA4419D6C142009174D8 /* SUPanel.h */,
+				257ADA4519D6C142009174D8 /* SUPanel.m */,
 				257ADA2519D6C110009174D8 /* AppDelegate.h */,
 				257ADA2619D6C110009174D8 /* AppDelegate.m */,
 				257ADA2819D6C110009174D8 /* ViewController.h */,
@@ -215,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257ADA4619D6C142009174D8 /* SUPanel.m in Sources */,
 				257ADA2A19D6C110009174D8 /* ViewController.m in Sources */,
 				257ADA2719D6C110009174D8 /* AppDelegate.m in Sources */,
 				257ADA2419D6C110009174D8 /* main.m in Sources */,
